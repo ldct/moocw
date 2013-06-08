@@ -1,0 +1,1 @@
+from moocw import application, check_requests_applications

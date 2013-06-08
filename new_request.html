@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up - OCW Reminder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <style>
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    p {
+      margin-top:1em;
+    }
+
+    /* Custom container */
+    .container-narrow {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    .container-narrow > hr {
+      margin: 30px 0;
+    }
+
+    .form-signup {
+      padding: 19px 29px 29px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+              border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+         -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+              box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    .form-signup .form-signup-heading,
+    .form-signup .checkbox {
+      margin-bottom: 10px;
+    }
+    .form-signup input[type="text"],
+    .form-signup input[type="password"] {
+      font-size: 16px;
+      height: auto;
+      margin-bottom: 15px;
+      padding: 7px 9px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="mailto:xuanji@gmail.com">Contact</a></li>
+        </ul>
+        <h3 class="muted">OCW Reminder Service</h3>
+      </div>
+
+      <div style="margin:36px"></div>
+
+      <form class="form-signup" action="/new_request_post" method="post">
+        <h2 class="form-signup-heading">Sign up for reminders</h2>
+
+        <div style="margin:26px"></div>
+        
+        <input type="text" name="email" class="input-block-level" placeholder="Email address">
+        <input type="text" name="courseid" class="input-block-level" placeholder="Course identifier">
+        <input type="date" name="date" class="input-block-level" placeholder="Start Date"><br><br>
+        <button class="btn btn-large btn-primary" type="submit">Sign up</button>
+      </form>
+
+      <div style="margin:36px"></div>
+
+      <h2> Instructions </h2>
+      <p> Enter the email address you wish to receive reminders at, the course identifier for the course you wish to receive reminders for, and the date you wish to receive the first email.
+      <p> Currently, we are only accepting courses from MIT OpenCourseWare - support for other providers will be coming soon.
+      <p> We prefer that you specify the course using the MIT Course Number, for example, <b> 18.034 </b> for the course 18.034 - Honors Differential Equations. Type this into the Course Identifier field of the form. If you cannot unambiguously identify your course in this manner, just use the url of the OCW page.
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

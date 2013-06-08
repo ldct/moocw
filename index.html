@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OCW Reminder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <style>
+
+    hr {
+      height: 3px;
+      border: 0;
+      background-color: #c3c3c3;
+      background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#f7f6f4), to(#f7f6f4), color-stop(50%, #fff));
+      background-image: -webkit-linear-gradient(left, #f7f6f4, #fff, #f7f6f4);
+      background-image: -moz-linear-gradient(left, #f7f6f4, #fff, #f7f6f4);
+      background-image: -ms-linear-gradient(left, #f7f6f4, #fff, #f7f6f4);
+      background-image: -o-linear-gradient(left, #f7f6f4, #fff, #f7f6f4);
+    }
+    hr::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #f7f6f4;
+      background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#f7f6f4), to(#f7f6f4), color-stop(50%, #c3c3c3));
+      background-image: -webkit-linear-gradient(left, #f7f6f4, #c3c3c3, #f7f6f4);
+      background-image: -moz-linear-gradient(left, #f7f6f4, #c3c3c3, #f7f6f4);
+      background-image: -ms-linear-gradient(left, #f7f6f4, #c3c3c3, #f7f6f4);
+      background-image: -o-linear-gradient(left, #f7f6f4, #c3c3c3, #f7f6f4);
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    /* Custom container */
+    .container-narrow {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    .container-narrow > hr {
+      margin: 30px 0;
+    }
+
+
+    /* Main marketing message and sign up button */
+    .jumbotron {
+      margin: 60px 0;
+      text-align: center;
+    }
+    .jumbotron h1 {
+      font-size: 72px;
+      line-height: 1;
+    }
+    .jumbotron .btn {
+      font-size: 21px;
+      padding: 14px 24px;
+    }
+
+    /* Supporting marketing content */
+    .marketing {
+      margin: 60px 0;
+    }
+    .marketing p + h4 {
+      margin-top: 28px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="mailto:xuanji@gmail.com">Contact</a></li>
+        </ul>
+        <h3 class="muted">OCW Reminder Service</h3>
+      </div>
+
+
+      <div class="jumbotron">
+        <h1>OpenCourseWare material emailed to you every week</h1>
+        <p class="lead"></p>
+        <a class="btn btn-large btn-success" href="/new_request">Choose your course now</a><p><p><p>
+        <a class="btn btn-large btn-success" href="http://ocw.mit.edu/courses/most-visited-courses/">View Popular Courses</a>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span4">
+          <h4>Huge catalog</h4>
+          <p> Can't find the course you want to take on existing MOOC platforms? Choose from thousands of classes available on the OpenCourseWare platform instead.</p>
+        </div>
+        <div class="span4">
+          <h4>Your pace</h4>
+          <p>Begin the class any time you want. Each week, we'll email you the lectures, assignments any other material associated with the class.</p>
+       </div>
+        <div class="span4">
+          <h4>Simple emails</h4>
+          <p>Get short, to-the-point emails. Each email is meant to be little more than a list of links to only the course material used for the week.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

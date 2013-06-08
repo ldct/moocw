@@ -1,0 +1,32 @@
+application: ocw-reminder
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /new_request
+  static_files: new_request.html
+  upload: new_request\.html
+
+- url: /new_request_done
+  static_files: new_request_done.html
+  upload: new_request_done\.html
+
+- url: /check_all_requests
+  script: moocw.check_requests_applications
+  login: admin
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /.*
+  script: moocw.application
+
+libraries:
+- name: webapp2
+  version: latest

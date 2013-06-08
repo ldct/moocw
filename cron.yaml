@@ -1,0 +1,4 @@
+cron:
+- description: check all requests
+  url: /check_all_requests
+  schedule: every 10 minutes
